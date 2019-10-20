@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JioNews_Icons.ttf">
+            <string>JioNews_Icons</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseViewController" customModule="Shop101" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="k7X-GA-EnF" id="Ect-sH-8hi"/>
+                <outlet property="customNavigationView" destination="j9U-Yx-B9b" id="OYi-Yr-YGl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuD-Nc-iQH">
+                    <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="k7X-GA-EnF">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="773"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RrW-w8-Hwk">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="k7X-GA-EnF" firstAttribute="top" secondItem="uuD-Nc-iQH" secondAttribute="top" id="4cz-cz-kP6"/>
+                        <constraint firstItem="k7X-GA-EnF" firstAttribute="leading" secondItem="uuD-Nc-iQH" secondAttribute="leading" id="WKp-G8-Mmq"/>
+                        <constraint firstAttribute="trailing" secondItem="k7X-GA-EnF" secondAttribute="trailing" id="giX-LS-Nf5"/>
+                        <constraint firstAttribute="bottom" secondItem="k7X-GA-EnF" secondAttribute="bottom" id="oR9-lX-eOQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9U-Yx-B9b">
+                    <rect key="frame" x="0.0" y="31" width="414" height="58"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop101" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpl-er-TUp">
+                            <rect key="frame" x="58" y="18.5" width="70" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrM-pz-8ue">
+                            <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="TrM-pz-8ue" secondAttribute="height" multiplier="1:1" id="s4h-9e-NFl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="JioNews_Icons" family="JioNews_Icons" pointSize="19"/>
+                            <state key="normal" title="r">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7L-a0-cn6">
+                            <rect key="frame" x="298" y="0.0" width="58" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="J7L-a0-cn6" secondAttribute="height" multiplier="1:1" id="RHT-83-5DR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="JioNews_Icons" family="JioNews_Icons" pointSize="19"/>
+                            <state key="normal" title="K">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YB6-d4-87a">
+                            <rect key="frame" x="356" y="0.0" width="58" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="YB6-d4-87a" secondAttribute="height" multiplier="1:1" id="LBu-xJ-eDd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="JioNews_Icons" family="JioNews_Icons" pointSize="19"/>
+                            <state key="normal" title="s">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddl-tX-GOG">
+                            <rect key="frame" x="240" y="0.0" width="58" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ddl-tX-GOG" secondAttribute="height" multiplier="1:1" id="Uv7-rc-lBc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="JioNews_Icons" family="JioNews_Icons" pointSize="19"/>
+                            <state key="normal" title="G">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ddl-tX-GOG" secondAttribute="bottom" id="Dmt-b7-RkY"/>
+                        <constraint firstItem="cpl-er-TUp" firstAttribute="centerY" secondItem="TrM-pz-8ue" secondAttribute="centerY" id="HkS-Dc-KjP"/>
+                        <constraint firstAttribute="trailing" secondItem="YB6-d4-87a" secondAttribute="trailing" id="HuM-Hn-bpl"/>
+                        <constraint firstAttribute="bottom" secondItem="YB6-d4-87a" secondAttribute="bottom" id="OLe-UH-j1V"/>
+                        <constraint firstItem="TrM-pz-8ue" firstAttribute="top" secondItem="j9U-Yx-B9b" secondAttribute="top" id="OSc-oe-hsS"/>
+                        <constraint firstAttribute="bottom" secondItem="J7L-a0-cn6" secondAttribute="bottom" id="Ovq-Yy-mH3"/>
+                        <constraint firstItem="ddl-tX-GOG" firstAttribute="top" secondItem="j9U-Yx-B9b" secondAttribute="top" id="XCO-Cg-Eh9"/>
+                        <constraint firstItem="J7L-a0-cn6" firstAttribute="top" secondItem="j9U-Yx-B9b" secondAttribute="top" id="g1F-Wm-Xkb"/>
+                        <constraint firstAttribute="bottom" secondItem="TrM-pz-8ue" secondAttribute="bottom" id="kU5-qC-TDW"/>
+                        <constraint firstItem="cpl-er-TUp" firstAttribute="leading" secondItem="TrM-pz-8ue" secondAttribute="trailing" id="ksU-VH-YrB"/>
+                        <constraint firstAttribute="height" constant="58" id="mPh-OS-d4t"/>
+                        <constraint firstItem="YB6-d4-87a" firstAttribute="leading" secondItem="J7L-a0-cn6" secondAttribute="trailing" id="mZ7-qh-KVh"/>
+                        <constraint firstItem="J7L-a0-cn6" firstAttribute="leading" secondItem="ddl-tX-GOG" secondAttribute="trailing" id="tFg-t2-yVX"/>
+                        <constraint firstItem="TrM-pz-8ue" firstAttribute="leading" secondItem="j9U-Yx-B9b" secondAttribute="leading" id="xR5-5S-OSr"/>
+                        <constraint firstItem="YB6-d4-87a" firstAttribute="top" secondItem="j9U-Yx-B9b" secondAttribute="top" id="ygH-pj-w0F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="j9U-Yx-B9b" secondAttribute="trailing" id="1Ur-WO-hTM"/>
+                <constraint firstItem="uuD-Nc-iQH" firstAttribute="top" secondItem="j9U-Yx-B9b" secondAttribute="bottom" id="383-sP-6X2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uuD-Nc-iQH" secondAttribute="trailing" id="792-yP-2IE"/>
+                <constraint firstItem="j9U-Yx-B9b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DDI-wM-6yz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uuD-Nc-iQH" secondAttribute="bottom" id="F3z-6n-JzK"/>
+                <constraint firstItem="uuD-Nc-iQH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OjJ-K7-89E"/>
+                <constraint firstItem="j9U-Yx-B9b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="jXq-NA-4rh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>
