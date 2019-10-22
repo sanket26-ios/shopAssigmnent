@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -80,6 +80,7 @@
 		45E9ECCD235B2ECE00E81777 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		45E9ECCF235B2EE900E81777 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		45E9ECD1235B2F1300E81777 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		45FB3C53235F262D001550E0 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		677996EC0140F2A4690C174F /* Pods_Shop101Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shop101Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF249FA83AB1027ED066E36 /* Pods-Shop101Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shop101Tests.debug.xcconfig"; path = "Target Support Files/Pods-Shop101Tests/Pods-Shop101Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC8AE4C95473AC935BBA345 /* Pods_Shop101.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shop101.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +195,7 @@
 				45A03E0E235B2CB60009A77F /* BaseViewController.swift */,
 				45A03E0F235B2CB60009A77F /* BaseViewController.xib */,
 				45A03DF1235B246D0009A77F /* LaunchScreen.storyboard */,
+				45FB3C53235F262D001550E0 /* BridgingHeader.h */,
 			);
 			path = Shop101;
 			sourceTree = "<group>";
@@ -249,7 +251,6 @@
 				8DF249FA83AB1027ED066E36 /* Pods-Shop101Tests.debug.xcconfig */,
 				D6C211CA7840C79C9687FBEE /* Pods-Shop101Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -615,6 +616,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanket.Shop101;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Shop101/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -635,6 +637,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanket.Shop101;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Shop101/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

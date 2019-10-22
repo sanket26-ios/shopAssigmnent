@@ -54,9 +54,8 @@ class TemplateCollectionViewCell: UICollectionViewCell {
             }
             
             let url = URL(string: imageUrl)
-            if let imageData = try? Data(contentsOf: url!) {
-                fullImageView.image = UIImage(data: imageData)
-            }
+
+            fullImageView.sd_setImage(with: url, completed: nil)
 
         } else if data.imageElements?.count == 2 {
             self.fullImageContainerView.isHidden = true
