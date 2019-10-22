@@ -264,6 +264,7 @@
 				45A03DDE235B24690009A77F /* Sources */,
 				45A03DDF235B24690009A77F /* Frameworks */,
 				45A03DE0235B24690009A77F /* Resources */,
+				93AD78944A8AC05CBC0FE376 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,7 +283,6 @@
 				45A03DF5235B246D0009A77F /* Sources */,
 				45A03DF6235B246D0009A77F /* Frameworks */,
 				45A03DF7235B246D0009A77F /* Resources */,
-				A43487352CCCBCCF2C235C65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -401,21 +401,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A43487352CCCBCCF2C235C65 /* [CP] Embed Pods Frameworks */ = {
+		93AD78944A8AC05CBC0FE376 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Shop101Tests/Pods-Shop101Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Shop101/Pods-Shop101-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Shop101Tests/Pods-Shop101Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Shop101/Pods-Shop101-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shop101Tests/Pods-Shop101Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shop101/Pods-Shop101-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
