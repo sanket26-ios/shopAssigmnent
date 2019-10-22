@@ -17,6 +17,7 @@ class FirstViewController: BaseViewController {
         self.registerCell()
         self.reloadClosureListner()
         self.viewModel.getDataForPaginationKey(paginationKey: -10000000)
+        
     }
     
     func registerCell() {
